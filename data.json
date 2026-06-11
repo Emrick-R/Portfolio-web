@@ -70,7 +70,7 @@
     "sectionTitle":  { "fr": "Projets",               "en": "Projects"       },
     "items": [
       {
-        "type":  { "fr": "Projet personnel", "en": "Personal project" },
+        "type":  { "fr": "Web full-stack", "en": "Full-stack web" },
         "name":  "BuildVault",
         "description": {
           "fr": "Site web pour sauvegarder ses builds et équipements par jeu vidéo — avec upload de screenshots, descriptions et système de tags.",
@@ -139,7 +139,7 @@
         "links": [
           { "label": "⌥ GitHub", "href": "https://github.com/Harld9/Abyssal-Clicker" },
           { "label": "📄 Slides", "href": "#" },
-          { "label": "🎮 Démo",  "href": "https://harld9.github.io/Abyssal-Clicker/" }
+          { "label": "🎮 Démo",  "href": "#" }
         ]
       },
       {
@@ -157,8 +157,36 @@
         ]
       },
       {
-        "type":  { "fr": "Scripting Bash", "en": "Bash scripting" },
-        "name":  "renpic.sh",
+        "type":  { "fr": "Projet scolaire (48h)", "en": "School project (48h)" },
+        "name":  "Qui a la ref ?",
+        "description": {
+          "fr": "Quiz battle royale multijoueur — grand écran animateur + réponses depuis le téléphone, élimination automatique toutes les 120s et podium final.",
+          "en": "Multiplayer battle royale quiz — host screen + phone answers, automatic elimination every 120s and a final podium."
+        },
+        "role":  { "fr": "QUATRE — Rédacteur de questions — banque de questions pop culture", "en": "FOUR — Question writer — pop culture question bank" },
+        "color": "indigo",
+        "stack": ["React", "Express", "Turso/libSQL"],
+        "links": [
+          { "label": "⌥ GitHub", "href": "https://github.com/Emrick-R/Challenge-48H-G6" }
+        ]
+      },
+      {
+        "type":  { "fr": "Mini RPG", "en": "Mini RPG" },
+        "name":  "Pizza Battle",
+        "description": {
+          "fr": "Mini RPG en Go où le joueur affronte une série d'ennemis pizza-thématisés. Système de progression, scoring et difficulté adaptative selon l'avancement.",
+          "en": "Go-based mini RPG where the player fights a series of pizza-themed enemies. Progression system, scoring and adaptive difficulty."
+        },
+        "role":  { "fr": "DUO — Développement complet", "en": "DUO — Full development" },
+        "color": "yellow",
+        "stack": ["Go"],
+        "links": [
+          { "label": "⌥ GitHub", "href": "https://github.com/Emrick-R/projet-red_PIZZA-BATTLE" }
+        ]
+      },
+      {
+        "type":  { "fr": "Script", "en": "Script" },
+        "name":  "Renpic.sh",
         "description": {
           "fr": "Script bash de renommage automatique de photos JPEG à partir des métadonnées EXIF — date de prise, nom personnalisable via options.",
           "en": "Bash script for automatic JPEG photo renaming using EXIF metadata — capture date, customisable name via options."
