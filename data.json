@@ -181,7 +181,8 @@
         "color": "yellow",
         "stack": ["Go"],
         "links": [
-          { "label": "⌥ GitHub", "href": "https://github.com/Emrick-R/projet-red_PIZZA-BATTLE" }
+          { "label": "⌥ GitHub", "href": "https://github.com/Emrick-R/projet-red_PIZZA-BATTLE" },
+          { "label": "📄 Slides", "href": "./assets/slides/PIZZABATTLE.pdf" }
         ]
       },
       {
@@ -218,6 +219,6 @@
   "footer": {
     "name": "Emrick RIVET",
     "year": 2026,
-    "repoUrl": "https://github.com/Emrick-R/portfolio"
+    "repoUrl": "https://github.com/Emrick-R/Portfolio-web"
   }
 }
