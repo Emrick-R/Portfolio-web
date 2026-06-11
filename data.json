@@ -1,0 +1,177 @@
+{
+  "nav": {
+    "logo": "emrick",
+    "logoAccent": "."
+  },
+
+  "hero": {
+    "eyebrow": "Disponible pour un stage",
+    "name": "Emrick RIVET",
+    "subtitle": "Étudiant développeur passionné par le web, le backend et l'infra. Je construis des projets concrets — du forum Node.js au réseau d'entreprise simulé.",
+    "buttons": [
+      { "label": "Voir mes projets", "href": "#projects", "style": "primary" },
+      { "label": "Me contacter",     "href": "#contact",  "style": "outline" },
+      { "label": "📄 CV",            "href": "#",         "style": "outline" }
+    ]
+  },
+
+  "about": {
+    "sectionLabel": "Qui suis-je",
+    "sectionTitle": "À propos",
+    "photo": "./assets/images/profile.jpg",
+    "paragraphs": [
+      "Je suis étudiant en développement informatique à <strong>Ynov Campus</strong>, actuellement en première année de bachelor (Info B1). Je construis des projets qui couvrent autant le <strong>développement web full-stack</strong> que l'<strong>administration système</strong> et le <strong>scripting</strong>.",
+      "J'aime comprendre comment les choses fonctionnent en profondeur — que ce soit un réseau d'entreprise, une API REST ou un moteur de jeu en Lua.",
+      "Je suis à la recherche d'un <strong>stage</strong> pour mettre en pratique mes compétences dans un contexte professionnel."
+    ],
+    "paragraphs2": [
+      "Ce que j'aime dans le code, c'est résoudre des problèmes concrets. Chaque projet m'a appris quelque chose de nouveau — JWT, sockets Java, Active Directory, ou l'API Spotify en Go.",
+      "En dehors des cours, je construis un site de gestion de builds gaming — sauvegarde d'équipements par jeu, screenshots, descriptions et tags — et j'explore régulièrement de nouveaux langages et outils."
+    ],
+    "domains": [
+      { "label": "Web full-stack", "color": "violet" },
+      { "label": "Infra réseau",   "color": "cyan"   },
+      { "label": "Backend",        "color": "coral"  },
+      { "label": "Scripting",      "color": "green"  }
+    ]
+  },
+
+  "skills": {
+    "sectionLabel": "Stack technique",
+    "sectionTitle": "Compétences",
+    "groups": [
+      {
+        "title": "Frontend",
+        "tags": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "title": "Backend",
+        "tags": ["Node.js", "Express", "Java", "Go"]
+      },
+      {
+        "title": "Données",
+        "tags": ["MySQL", "SQL"]
+      },
+      {
+        "title": "Infra & Sys",
+        "tags": ["Linux", "Active Directory", "VirtualBox", "Nextcloud", "Tailscale"]
+      },
+      {
+        "title": "Scripting",
+        "tags": ["Bash", "Lua"]
+      },
+      {
+        "title": "Outils",
+        "tags": ["Git", "GitHub", "VS Code", "JWT", "bcrypt"]
+      }
+    ]
+  },
+
+  "projects": {
+    "sectionLabel": "Ce que j'ai construit",
+    "sectionTitle": "Projets",
+    "items": [
+      {
+        "type": "Projet personnel",
+        "name": "BuildVault",
+        "description": "Site web pour sauvegarder ses builds et équipements par jeu vidéo — avec upload de screenshots, descriptions et système de tags.",
+        "role": "Solo — projet perso",
+        "color": "blue",
+        "stack": [
+          "Node.js",
+          "Express",
+          "JavaScript"
+        ],
+        "links": []
+      },
+      {
+        "type": "Web full-stack",
+        "name": "Pwitter",
+        "description": "Forum-style web app avec système d'authentification, posts, et gestion des droits admin. Architecture backend complète avec JWT et bcrypt.",
+        "role": "DUO - Backend complet",
+        "color": "violet",
+        "stack": ["Node.js", "Express", "MySQL", "JWT", "bcrypt"],
+        "links": [
+          { "label": "⌥ GitHub", "href": "https://github.com/Emrick-R/Livrables_forum_Pwitter" },
+          { "label": "📄 Slides", "href": "#" }
+        ]
+      },
+      {
+        "type": "Infrastructure",
+        "name": "Projet NUAGE",
+        "description": "Réseau d'entreprise simulé avec domaine Active Directory, partage de fichiers SMB/NTFS, Nextcloud auto-hébergé et accès VPN externe via Tailscale.",
+        "role": "TRIO — responsable VPN & cloud, AD et Nextcloud en pratique",
+        "color": "cyan",
+        "stack": ["Windows Server 2022", "Ubuntu Server", "Active Directory", "Nextcloud", "Tailscale"],
+        "links": [
+          { "label": "⌥ GitHub", "href": "https://github.com/Florian-AZ/Projet-Nuage" },
+          { "label": "📄 Slides", "href": "./assets/slides/NUAGE.pdf" }
+        ]
+      },
+      {
+        "type": "API / Backend",
+        "name": "Spotify Go",
+        "description": "Application permettant de rechercher des musiques via l'API Spotify et de les ajouter à ses favoris. Backend conçu intégralement en Go.",
+        "role": "DUO - Backend complet",
+        "color": "green",
+        "stack": ["Go", "Spotify API", "OAuth2"],
+        "links": [
+          { "label": "⌥ GitHub", "href": "https://github.com/Emrick-R/TP-API-Spotify" },
+          { "label": "📄 Slides", "href": "./assets/slides/Groupie-Tracker-Sudo-FM.pdf" }
+        ]
+      },
+      {
+        "type": "Jeu browser",
+        "name": "Abyssal Clicker",
+        "description": "Clicker game à thème océanique avec 13 niveaux de progression, architecture JavaScript modulaire, et interface entièrement en CSS Grid.",
+        "role": "TRIO — Visuel",
+        "color": "coral",
+        "stack": ["JavaScript", "CSS Grid", "HTML"],
+        "links": [
+          { "label": "⌥ GitHub", "href": "https://github.com/Harld9/Abyssal-Clicker" },
+          { "label": "📄 Slides", "href": "#" },
+          { "label": "🎮 Démo",  "href": "#" }
+        ]
+      },
+      {
+        "type": "Jeu Java",
+        "name": "Urban Marginal",
+        "description": "Jeu multijoueur en réseau avec interface Swing, gestion des connexions/déconnexions de joueurs et communication via sockets Java.",
+        "role": "SOLO - Développement Java complet",
+        "color": "yellow",
+        "stack": ["Java", "Swing", "Sockets"],
+        "links": [
+          { "label": "⌥ GitHub", "href": "https://github.com/Emrick-R/Urban-Marginal" }
+        ]
+      },
+      {
+        "type": "Scripting Bash",
+        "name": "renpic.sh",
+        "description": "Script bash de renommage automatique de photos JPEG à partir des métadonnées EXIF — date de prise, nom personnalisable via options.",
+        "role": "SOLO — Conception",
+        "color": "pink",
+        "stack": ["Bash", "exiftool", "getopts", "Linux"],
+        "links": [
+          { "label": "⌥ GitHub", "href": "https://github.com/Emrick-R/Renpic.sh" }
+        ]
+      }
+    ]
+  },
+
+  "contact": {
+    "sectionLabel": "Travaillons ensemble",
+    "sectionTitle": "Contact",
+    "description": "Je suis disponible pour un stage — n'hésite pas à me contacter si tu as une opportunité ou juste envie d'échanger.",
+    "links": [
+      { "label": "✉️ Envoyer un mail", "href": "mailto:emrick.rivet@outloock.fr",   "style": "primary" },
+      { "label": "GitHub",             "href": "https://github.com/Emrick-R",     "style": "outline" },
+      { "label": "LinkedIn",           "href": "https://www.linkedin.com/in/emrick-rivet-763910178/", "style": "outline" }
+    ]
+  },
+
+  "footer": {
+    "name": "Emrick",
+    "year": 2026,
+    "repoUrl": "https://github.com/ton-github/portfolio"
+  }
+}
