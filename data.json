@@ -171,18 +171,32 @@
         ]
       },
       {
-        "type":  { "fr": "Mini RPG", "en": "Mini RPG" },
-        "name":  "Pizza Battle",
-        "description": {
-          "fr": "Mini RPG en Go où le joueur affronte une série d'ennemis pizza-thématisés. Système de progression, scoring et difficulté adaptative selon l'avancement.",
-          "en": "Go-based mini RPG where the player fights a series of pizza-themed enemies. Progression system, scoring and adaptive difficulty."
+        "type": {
+          "fr": "Mini RPG terminal",
+          "en": "Terminal mini RPG"
         },
-        "role":  { "fr": "DUO — Développement complet", "en": "DUO — Full development" },
+        "name": "Pizza Battle",
+        "description": {
+          "fr": "Mini RPG en ligne de commande écrit en Go — affrontez des ennemis pizza-thématisés avec un système de progression, scoring et difficulté adaptative.",
+          "en": "Command-line mini RPG written in Go — fight pizza-themed enemies with a progression system, scoring and adaptive difficulty."
+        },
+        "role": {
+          "fr": "DUO — Développement complet",
+          "en": "DUO — Full development"
+        },
         "color": "yellow",
-        "stack": ["Go"],
+        "stack": [
+          "Go"
+        ],
         "links": [
-          { "label": "⌥ GitHub", "href": "https://github.com/Emrick-R/projet-red_PIZZA-BATTLE" },
-          { "label": "📄 Slides", "href": "./assets/slides/PIZZABATTLE.pdf" }
+          {
+            "label": "⌥ GitHub",
+            "href": "https://github.com/Emrick-R/projet-red_PIZZA-BATTLE"
+          },
+          {
+            "label": "📄 Slides",
+            "href": "./assets/slides/PIZZABATTLE.pdf"
+          }
         ]
       },
       {
