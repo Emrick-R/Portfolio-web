@@ -5,90 +5,90 @@
   },
 
   "hero": {
-    "eyebrow": "Disponible pour un stage",
+    "eyebrow":  { "fr": "Disponible pour un stage", "en": "Available for an internship" },
     "name": "Emrick RIVET",
-    "subtitle": "Étudiant développeur passionné par le web, le backend et l'infra. Je construis des projets concrets — du forum Node.js au réseau d'entreprise simulé.",
+    "subtitle": {
+      "fr": "Étudiant développeur passionné par le web, le backend et l'infra. Je construis des projets concrets — du forum Node.js au réseau d'entreprise simulé.",
+      "en": "Developer student passionate about web, backend and infrastructure. I build concrete projects — from a Node.js forum to a simulated enterprise network."
+    },
     "buttons": [
-      { "label": "Voir mes projets", "href": "#projects", "style": "primary" },
-      { "label": "Me contacter",     "href": "#contact",  "style": "outline" },
-      { "label": "📄 CV",            "href": "#",         "style": "outline" }
+      { "label": { "fr": "Voir mes projets", "en": "See my projects" }, "href": "#projects", "style": "primary" },
+      { "label": { "fr": "Me contacter",     "en": "Contact me"      }, "href": "#contact",  "style": "outline" },
+      { "label": { "fr": "📄 CV",            "en": "📄 Resume"       }, "href": "#",         "style": "outline" }
     ]
   },
 
   "about": {
-    "sectionLabel": "Qui suis-je",
-    "sectionTitle": "À propos",
+    "sectionLabel": { "fr": "Qui suis-je",  "en": "About me"  },
+    "sectionTitle":  { "fr": "À propos",     "en": "About"     },
     "photo": "./assets/images/profile.jpg",
-    "paragraphs": [
-      "Je suis étudiant en développement informatique à <strong>Ynov Campus</strong>, actuellement en première année de bachelor (Info B1). Je construis des projets qui couvrent autant le <strong>développement web full-stack</strong> que l'<strong>administration système</strong> et le <strong>scripting</strong>.",
-      "J'aime comprendre comment les choses fonctionnent en profondeur — que ce soit un réseau d'entreprise, une API REST ou un moteur de jeu en Lua.",
-      "Je suis à la recherche d'un <strong>stage</strong> pour mettre en pratique mes compétences dans un contexte professionnel."
-    ],
-    "paragraphs2": [
-      "Ce que j'aime dans le code, c'est résoudre des problèmes concrets. Chaque projet m'a appris quelque chose de nouveau — JWT, sockets Java, Active Directory, ou l'API Spotify en Go.",
-      "En dehors des cours, je construis un site de gestion de builds gaming — sauvegarde d'équipements par jeu, screenshots, descriptions et tags — et j'explore régulièrement de nouveaux langages et outils."
-    ],
+    "paragraphs": {
+      "fr": [
+        "Je suis étudiant en développement informatique à <strong>Ynov Campus</strong>, actuellement en première année de bachelor (Info B1). Je construis des projets qui couvrent autant le <strong>développement web full-stack</strong> que l'<strong>administration système</strong> et le <strong>scripting</strong>.",
+        "J'aime comprendre comment les choses fonctionnent en profondeur — que ce soit un réseau d'entreprise, une API REST ou un moteur de jeu en Lua.",
+        "Je suis à la recherche d'un <strong>stage</strong> pour mettre en pratique mes compétences dans un contexte professionnel."
+      ],
+      "en": [
+        "I am a computer science student at <strong>Ynov Campus</strong>, currently in my first year of bachelor's degree (Info B1). I build projects covering <strong>full-stack web development</strong>, <strong>system administration</strong> and <strong>scripting</strong>.",
+        "I enjoy understanding how things work under the hood — whether it's an enterprise network, a REST API or a Lua game engine.",
+        "I am looking for an <strong>internship</strong> to apply my skills in a professional environment."
+      ]
+    },
+    "paragraphs2": {
+      "fr": [
+        "Ce que j'aime dans le code, c'est résoudre des problèmes concrets. Chaque projet m'a appris quelque chose de nouveau — JWT, sockets Java, Active Directory, ou l'API Spotify en Go.",
+        "En dehors des cours, je construis BuildVault, un site personnel pour sauvegarder ses builds et équipements par jeu vidéo — avec screenshots, descriptions et tags — et j'explore régulièrement de nouveaux langages et outils."
+      ],
+      "en": [
+        "What I love about coding is solving concrete problems. Every project taught me something new — JWT, Java sockets, Active Directory, or the Spotify API in Go.",
+        "Outside of class, I'm building BuildVault, a personal site to save gaming builds and gear per game — with screenshots, descriptions and tags — and I regularly explore new languages and tools."
+      ]
+    },
     "domains": [
-      { "label": "Web full-stack", "color": "violet" },
-      { "label": "Infra réseau",   "color": "cyan"   },
-      { "label": "Backend",        "color": "coral"  },
-      { "label": "Scripting",      "color": "green"  }
+      { "label": { "fr": "Web full-stack", "en": "Full-stack web" }, "color": "violet" },
+      { "label": { "fr": "Infra réseau",   "en": "Networking"     }, "color": "cyan"   },
+      { "label": { "fr": "Backend",        "en": "Backend"        }, "color": "coral"  },
+      { "label": { "fr": "Scripting",      "en": "Scripting"      }, "color": "green"  }
     ]
   },
 
   "skills": {
-    "sectionLabel": "Stack technique",
-    "sectionTitle": "Compétences",
+    "sectionLabel": { "fr": "Stack technique", "en": "Tech stack"  },
+    "sectionTitle":  { "fr": "Compétences",     "en": "Skills"     },
     "groups": [
-      {
-        "title": "Frontend",
-        "tags": ["HTML", "CSS", "JavaScript"]
-      },
-      {
-        "title": "Backend",
-        "tags": ["Node.js", "Express", "Java", "Go"]
-      },
-      {
-        "title": "Données",
-        "tags": ["MySQL", "SQL"]
-      },
-      {
-        "title": "Infra & Sys",
-        "tags": ["Linux", "Active Directory", "VirtualBox", "Nextcloud", "Tailscale"]
-      },
-      {
-        "title": "Scripting",
-        "tags": ["Bash", "Lua"]
-      },
-      {
-        "title": "Outils",
-        "tags": ["Git", "GitHub", "VS Code", "JWT", "bcrypt"]
-      }
+      { "title": { "fr": "Frontend",   "en": "Frontend"        }, "tags": ["HTML", "CSS", "JavaScript"] },
+      { "title": { "fr": "Backend",    "en": "Backend"         }, "tags": ["Node.js", "Express", "Java", "Go"] },
+      { "title": { "fr": "Données",    "en": "Data"            }, "tags": ["MySQL", "SQL"] },
+      { "title": { "fr": "Infra & Sys","en": "Infra & Sys"     }, "tags": ["Linux", "Active Directory", "VirtualBox", "Nextcloud", "Tailscale"] },
+      { "title": { "fr": "Scripting",  "en": "Scripting"       }, "tags": ["Bash", "Lua"] },
+      { "title": { "fr": "Outils",     "en": "Tools"           }, "tags": ["Git", "GitHub", "VS Code", "JWT", "bcrypt"] }
     ]
   },
 
   "projects": {
-    "sectionLabel": "Ce que j'ai construit",
-    "sectionTitle": "Projets",
+    "sectionLabel": { "fr": "Ce que j'ai construit", "en": "What I've built" },
+    "sectionTitle":  { "fr": "Projets",               "en": "Projects"       },
     "items": [
       {
-        "type": "Projet personnel",
-        "name": "BuildVault",
-        "description": "Site web pour sauvegarder ses builds et équipements par jeu vidéo — avec upload de screenshots, descriptions et système de tags.",
-        "role": "Solo — projet perso",
+        "type":  { "fr": "Projet personnel", "en": "Personal project" },
+        "name":  "BuildVault",
+        "description": {
+          "fr": "Site web pour sauvegarder ses builds et équipements par jeu vidéo — avec upload de screenshots, descriptions et système de tags.",
+          "en": "Web app to save gaming builds and gear per video game — with screenshot upload, descriptions and a tag system."
+        },
+        "role":  { "fr": "SOLO — Projet perso", "en": "SOLO — Personal project" },
         "color": "blue",
-        "stack": [
-          "Node.js",
-          "Express",
-          "JavaScript"
-        ],
+        "stack": ["Node.js", "Express", "JavaScript"],
         "links": []
       },
       {
-        "type": "Web full-stack",
-        "name": "Pwitter",
-        "description": "Forum-style web app avec système d'authentification, posts, et gestion des droits admin. Architecture backend complète avec JWT et bcrypt.",
-        "role": "DUO - Backend complet",
+        "type":  { "fr": "Web full-stack", "en": "Full-stack web" },
+        "name":  "Pwitter",
+        "description": {
+          "fr": "Forum-style web app avec système d'authentification, posts, et gestion des droits admin. Architecture backend complète avec JWT et bcrypt.",
+          "en": "Forum-style web app with authentication, posts and admin rights management. Full backend architecture with JWT and bcrypt."
+        },
+        "role":  { "fr": "DUO — Backend complet", "en": "DUO — Full backend" },
         "color": "violet",
         "stack": ["Node.js", "Express", "MySQL", "JWT", "bcrypt"],
         "links": [
@@ -97,10 +97,13 @@
         ]
       },
       {
-        "type": "Infrastructure",
-        "name": "Projet NUAGE",
-        "description": "Réseau d'entreprise simulé avec domaine Active Directory, partage de fichiers SMB/NTFS, Nextcloud auto-hébergé et accès VPN externe via Tailscale.",
-        "role": "TRIO — responsable VPN & cloud, AD et Nextcloud en pratique",
+        "type":  { "fr": "Infrastructure", "en": "Infrastructure" },
+        "name":  "Projet NUAGE",
+        "description": {
+          "fr": "Réseau d'entreprise simulé avec domaine Active Directory, partage de fichiers SMB/NTFS, Nextcloud auto-hébergé et accès VPN externe via Tailscale.",
+          "en": "Simulated enterprise network with Active Directory domain, SMB/NTFS file sharing, self-hosted Nextcloud and external VPN access via Tailscale."
+        },
+        "role":  { "fr": "TRIO — Responsable VPN & cloud", "en": "TRIO — VPN & cloud lead" },
         "color": "cyan",
         "stack": ["Windows Server 2022", "Ubuntu Server", "Active Directory", "Nextcloud", "Tailscale"],
         "links": [
@@ -109,10 +112,13 @@
         ]
       },
       {
-        "type": "API / Backend",
-        "name": "Spotify Go",
-        "description": "Application permettant de rechercher des musiques via l'API Spotify et de les ajouter à ses favoris. Backend conçu intégralement en Go.",
-        "role": "DUO - Backend complet",
+        "type":  { "fr": "API / Backend", "en": "API / Backend" },
+        "name":  "Spotify Go",
+        "description": {
+          "fr": "Application permettant de rechercher des musiques via l'API Spotify et de les ajouter à ses favoris. Backend conçu intégralement en Go.",
+          "en": "App to search for music via the Spotify API and add tracks to favourites. Backend built entirely in Go."
+        },
+        "role":  { "fr": "DUO — Backend complet", "en": "DUO — Full backend" },
         "color": "green",
         "stack": ["Go", "Spotify API", "OAuth2"],
         "links": [
@@ -121,10 +127,13 @@
         ]
       },
       {
-        "type": "Jeu browser",
-        "name": "Abyssal Clicker",
-        "description": "Clicker game à thème océanique avec 13 niveaux de progression, architecture JavaScript modulaire, et interface entièrement en CSS Grid.",
-        "role": "TRIO — Visuel",
+        "type":  { "fr": "Jeu browser", "en": "Browser game" },
+        "name":  "Abyssal Clicker",
+        "description": {
+          "fr": "Clicker game à thème océanique avec 13 niveaux de progression, architecture JavaScript modulaire, et interface entièrement en CSS Grid.",
+          "en": "Ocean-themed clicker game with 13 progression tiers, modular JavaScript architecture and a CSS Grid interface."
+        },
+        "role":  { "fr": "TRIO — Visuel", "en": "TRIO — Visual" },
         "color": "coral",
         "stack": ["JavaScript", "CSS Grid", "HTML"],
         "links": [
@@ -134,10 +143,13 @@
         ]
       },
       {
-        "type": "Jeu Java",
-        "name": "Urban Marginal",
-        "description": "Jeu multijoueur en réseau avec interface Swing, gestion des connexions/déconnexions de joueurs et communication via sockets Java.",
-        "role": "SOLO - Développement Java complet",
+        "type":  { "fr": "Jeu Java", "en": "Java game" },
+        "name":  "Urban Marginal",
+        "description": {
+          "fr": "Jeu multijoueur en réseau avec interface Swing, gestion des connexions/déconnexions de joueurs et communication via sockets Java.",
+          "en": "Networked multiplayer game with a Swing UI, player connection/disconnection handling and Java socket communication."
+        },
+        "role":  { "fr": "SOLO — Développement Java complet", "en": "SOLO — Full Java development" },
         "color": "yellow",
         "stack": ["Java", "Swing", "Sockets"],
         "links": [
@@ -145,10 +157,13 @@
         ]
       },
       {
-        "type": "Scripting Bash",
-        "name": "renpic.sh",
-        "description": "Script bash de renommage automatique de photos JPEG à partir des métadonnées EXIF — date de prise, nom personnalisable via options.",
-        "role": "SOLO — Conception",
+        "type":  { "fr": "Scripting Bash", "en": "Bash scripting" },
+        "name":  "renpic.sh",
+        "description": {
+          "fr": "Script bash de renommage automatique de photos JPEG à partir des métadonnées EXIF — date de prise, nom personnalisable via options.",
+          "en": "Bash script for automatic JPEG photo renaming using EXIF metadata — capture date, customisable name via options."
+        },
+        "role":  { "fr": "SOLO — Conception", "en": "SOLO — Design" },
         "color": "pink",
         "stack": ["Bash", "exiftool", "getopts", "Linux"],
         "links": [
@@ -159,19 +174,22 @@
   },
 
   "contact": {
-    "sectionLabel": "Travaillons ensemble",
-    "sectionTitle": "Contact",
-    "description": "Je suis disponible pour un stage — n'hésite pas à me contacter si tu as une opportunité ou juste envie d'échanger.",
+    "sectionLabel": { "fr": "Travaillons ensemble", "en": "Let's work together" },
+    "sectionTitle":  { "fr": "Contact",              "en": "Contact"            },
+    "description": {
+      "fr": "Je suis disponible pour un stage — n'hésite pas à me contacter si tu as une opportunité ou juste envie d'échanger.",
+      "en": "I am available for an internship — feel free to reach out if you have an opportunity or just want to chat."
+    },
     "links": [
-      { "label": "✉️ Envoyer un mail", "href": "mailto:emrick.rivet@outloock.fr",   "style": "primary" },
-      { "label": "GitHub",             "href": "https://github.com/Emrick-R",     "style": "outline" },
-      { "label": "LinkedIn",           "href": "https://www.linkedin.com/in/emrick-rivet-763910178/", "style": "outline" }
+      { "label": { "fr": "✉️ Envoyer un mail", "en": "✉️ Send an email" }, "href": "mailto:emrick.rivet@outloock.fr", "style": "primary" },
+      { "label": "GitHub",   "href": "https://github.com/Emrick-R",                              "style": "outline" },
+      { "label": "LinkedIn", "href": "https://www.linkedin.com/in/emrick-rivet-763910178/",      "style": "outline" }
     ]
   },
 
   "footer": {
     "name": "Emrick",
     "year": 2026,
-    "repoUrl": "https://github.com/ton-github/portfolio"
+    "repoUrl": "https://github.com/Emrick-R/portfolio"
   }
 }

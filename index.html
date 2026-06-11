@@ -44,6 +44,21 @@
     .nav-links a:hover { color: var(--text); }
     .theme-toggle-wrap { display: flex; align-items: center; gap: 0.5rem; }
     .theme-icon { font-size: 0.9rem; user-select: none; }
+    .lang-toggle {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.2rem 0.6rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--muted);
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: 0.05em;
+    }
+    .lang-toggle:hover { color: var(--text); border-color: var(--muted); }
+
     .theme-toggle {
       background: var(--bg2); border: 1px solid var(--border); border-radius: 999px;
       width: 44px; height: 24px; cursor: pointer; position: relative; transition: background 0.3s; flex-shrink: 0;
@@ -173,6 +188,7 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="theme-toggle-wrap">
+    <button class="lang-toggle" id="lang-toggle">EN</button>
     <span class="theme-icon" id="theme-icon">🌙</span>
     <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème"></button>
   </div>
@@ -255,103 +271,117 @@
     else        { root.setAttribute('data-theme','dark'); icon.textContent = '☀️'; localStorage.setItem('theme','dark'); }
   });
 
+  // ── LANGUE ──
+  let lang = localStorage.getItem('lang') || 'fr';
+  let DATA = null;
+
+  const langBtn = document.getElementById('lang-toggle');
+  langBtn.textContent = lang === 'fr' ? 'EN' : 'FR';
+
+  langBtn.addEventListener('click', () => {
+    lang = lang === 'fr' ? 'en' : 'fr';
+    localStorage.setItem('lang', lang);
+    langBtn.textContent = lang === 'fr' ? 'EN' : 'FR';
+    if (DATA) renderAll(DATA);
+  });
+
+  // Raccourci : retourne la valeur dans la bonne langue, ou la valeur brute si pas d'objet fr/en
+  function t(val) {
+    if (val && typeof val === 'object' && ('fr' in val || 'en' in val)) return val[lang] ?? val['fr'];
+    return val;
+  }
+
   // ── CHARGEMENT DU JSON ──
   fetch('data.json')
           .then(r => r.json())
           .then(d => {
-            renderNav(d.nav);
-            renderHero(d.hero);
-            renderAbout(d.about);
-            renderSkills(d.skills);
-            renderProjects(d.projects);
-            renderContact(d.contact);
-            renderFooter(d.footer);
+            DATA = d;
+            renderAll(d);
             initReveal();
-            initTilt();
           })
           .catch(err => console.error('Impossible de charger data.json :', err));
 
+  function renderAll(d) {
+    renderNav(d.nav);
+    renderHero(d.hero);
+    renderAbout(d.about);
+    renderSkills(d.skills);
+    renderProjects(d.projects);
+    renderContact(d.contact);
+    renderFooter(d.footer);
+    initTilt();
+  }
+
   function renderNav(nav) {
-    const logo = document.getElementById('nav-logo');
-    logo.innerHTML = nav.logo + '<span>' + nav.logoAccent + '</span>';
+    document.getElementById('nav-logo').innerHTML = nav.logo + '<span>' + nav.logoAccent + '</span>';
   }
 
   function renderHero(hero) {
-    document.getElementById('hero-eyebrow').textContent = hero.eyebrow;
+    document.getElementById('hero-eyebrow').textContent = t(hero.eyebrow);
     document.getElementById('hero-title').innerHTML =
-            'Salut, je suis<br><span class="gradient-text">' + hero.name + '</span>';
-    document.getElementById('hero-sub').textContent = hero.subtitle;
+            (lang === 'fr' ? 'Salut, je suis' : "Hi, I'm") + '<br><span class="gradient-text">' + hero.name + '</span>';
+    document.getElementById('hero-sub').textContent = t(hero.subtitle);
     document.getElementById('hero-ctas').innerHTML = hero.buttons.map(b =>
-            `<a href="${b.href}" class="btn btn-${b.style}">${b.label}</a>`
+            `<a href="${b.href}" class="btn btn-${b.style}">${t(b.label)}</a>`
     ).join('');
   }
 
   function renderAbout(about) {
-    document.getElementById('about-label').textContent = about.sectionLabel;
-    document.getElementById('about-title').textContent = about.sectionTitle;
+    document.getElementById('about-label').textContent = t(about.sectionLabel);
+    document.getElementById('about-title').textContent = t(about.sectionTitle);
 
-    // Colonne 1 : photo + paragraphes + domaines
     const col1 = document.getElementById('about-col1');
-    if (about.photo) {
-      col1.innerHTML = `<img src="${about.photo}" alt="Photo" class="about-photo">`;
-    } else {
-      col1.innerHTML = `<div class="about-photo-placeholder">📷<br>assets/photo.jpg</div>`;
-    }
-    col1.innerHTML += about.paragraphs.map(p => `<p>${p}</p>`).join('');
+    col1.innerHTML = about.photo
+            ? `<img src="${about.photo}" alt="Photo" class="about-photo">`
+            : `<div class="about-photo-placeholder">📷<br>assets/photo.jpg</div>`;
+    col1.innerHTML += t(about.paragraphs).map(p => `<p>${p}</p>`).join('');
     col1.innerHTML += `<div class="about-domains">` +
-            about.domains.map(d => `<span class="domain-tag tag-${d.color}">${d.label}</span>`).join('') +
+            about.domains.map(d => `<span class="domain-tag tag-${d.color}">${t(d.label)}</span>`).join('') +
             `</div>`;
 
-    // Colonne 2 : paragraphes secondaires
     document.getElementById('about-col2').innerHTML =
-            about.paragraphs2.map(p => `<p>${p}</p>`).join('');
+            t(about.paragraphs2).map(p => `<p>${p}</p>`).join('');
   }
 
   function renderSkills(skills) {
-    document.getElementById('skills-label').textContent = skills.sectionLabel;
-    document.getElementById('skills-title').textContent = skills.sectionTitle;
+    document.getElementById('skills-label').textContent = t(skills.sectionLabel);
+    document.getElementById('skills-title').textContent = t(skills.sectionTitle);
     document.getElementById('skills-grid').innerHTML = skills.groups.map(g => `
       <div class="skill-group">
-        <div class="skill-group-title">${g.title}</div>
-        <div class="skill-tags">
-          ${g.tags.map(t => `<span class="skill-tag">${t}</span>`).join('')}
-        </div>
+        <div class="skill-group-title">${t(g.title)}</div>
+        <div class="skill-tags">${g.tags.map(tag => `<span class="skill-tag">${tag}</span>`).join('')}</div>
       </div>
     `).join('');
   }
 
   function renderProjects(projects) {
-    document.getElementById('projects-label').textContent = projects.sectionLabel;
-    document.getElementById('projects-title').textContent = projects.sectionTitle;
+    document.getElementById('projects-label').textContent = t(projects.sectionLabel);
+    document.getElementById('projects-title').textContent = t(projects.sectionTitle);
     document.getElementById('projects-grid').innerHTML = projects.items.map(p => `
       <div class="project-card card-${p.color} reveal">
-        <div class="project-type">${p.type}</div>
+        <div class="project-type">${t(p.type)}</div>
         <div class="project-name">${p.name}</div>
-        <div class="project-desc">${p.description}</div>
-        <div class="project-role">${p.role}</div>
-        <div class="project-stack">
-          ${p.stack.map(s => `<span class="stack-tag">${s}</span>`).join('')}
-        </div>
-        <div class="project-links">
-          ${p.links.map(l => `<a href="${l.href}" class="project-link" target="_blank" rel="noopener">${l.label}</a>`).join('')}
-        </div>
+        <div class="project-desc">${t(p.description)}</div>
+        <div class="project-role">${t(p.role)}</div>
+        <div class="project-stack">${p.stack.map(s => `<span class="stack-tag">${s}</span>`).join('')}</div>
+        <div class="project-links">${p.links.map(l => `<a href="${l.href}" class="project-link" target="_blank" rel="noopener">${t(l.label)}</a>`).join('')}</div>
       </div>
     `).join('');
   }
 
   function renderContact(contact) {
-    document.getElementById('contact-label').textContent = contact.sectionLabel;
-    document.getElementById('contact-title').textContent = contact.sectionTitle;
-    document.getElementById('contact-desc').textContent  = contact.description;
+    document.getElementById('contact-label').textContent = t(contact.sectionLabel);
+    document.getElementById('contact-title').textContent = t(contact.sectionTitle);
+    document.getElementById('contact-desc').textContent  = t(contact.description);
     document.getElementById('contact-links').innerHTML = contact.links.map(l =>
-            `<a href="${l.href}" class="btn btn-${l.style}" target="_blank" rel="noopener">${l.label}</a>`
+            `<a href="${l.href}" class="btn btn-${l.style}" target="_blank" rel="noopener">${t(l.label)}</a>`
     ).join('');
   }
 
   function renderFooter(footer) {
     document.getElementById('footer-copy').textContent = `© ${footer.year} ${footer.name}`;
-    const repo = document.getElementById('footer-repo');
-    repo.href = footer.repoUrl;
+    document.getElementById('footer-repo').href = footer.repoUrl;
+    document.getElementById('footer-repo').textContent = lang === 'fr' ? 'Code source ↗' : 'Source code ↗';
   }
 
   function initReveal() {
