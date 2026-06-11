@@ -309,6 +309,7 @@
     renderProjects(d.projects);
     renderContact(d.contact);
     renderFooter(d.footer);
+    initReveal();
     initTilt();
   }
 
@@ -388,7 +389,10 @@
     const observer = new IntersectionObserver(entries => {
       entries.forEach(el => { if (el.isIntersecting) el.target.classList.add('visible'); });
     }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    document.querySelectorAll('.reveal').forEach(el => {
+      el.classList.remove('visible');
+      observer.observe(el);
+    });
   }
 
   function initTilt() {
