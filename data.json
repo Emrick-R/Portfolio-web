@@ -138,8 +138,8 @@
         "stack": ["JavaScript", "CSS Grid", "HTML"],
         "links": [
           { "label": "⌥ GitHub", "href": "https://github.com/Harld9/Abyssal-Clicker" },
-          { "label": "📄 Slides", "href": "#" },
-          { "label": "🎮 Démo",  "href": "#" }
+          { "label": "📄 Slides", "href": "./assets/slides/Abyssal-Clicker.pdf" },
+          { "label": "🎮 Démo",  "href": "https://harld9.github.io/Abyssal-Clicker/" }
         ]
       },
       {
