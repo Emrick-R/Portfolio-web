@@ -302,7 +302,12 @@
           "Bash",
           "Ubuntu Server"
         ],
-        "links": []
+        "links": [
+          {
+            "label": "GitHub",
+            "href": "https://github.com/Emrick-R/NovaBankCore-B2"
+          }
+        ]
       },
       {
         "type": {

@@ -1,82 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Emrick RIVET — Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap">
     <style>
         /* ─── Design tokens — Material / Teal ──────────────────── */
         :root {
-            --bg: #FAFAFA;
-            --surface: #FFFFFF;
-            --surface-2: #F5F5F5;
-            --divider: #E0E0E0;
-            --on-bg: #212121;
-            --on-bg-2: #616161;
-            --on-bg-3: #9E9E9E;
-            --teal: #00897B;
+            --bg:         #FAFAFA;
+            --surface:    #FFFFFF;
+            --surface-2:  #F5F5F5;
+            --divider:    #E0E0E0;
+            --on-bg:      #212121;
+            --on-bg-2:    #616161;
+            --on-bg-3:    #9E9E9E;
+            --teal:       #00897B;
             --teal-light: #E0F2F1;
-            --teal-dark: #00695C;
-            --on-teal: #FFFFFF;
-            --z1: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .08);
-            --z2: 0 3px 6px rgba(0, 0, 0, .10), 0 2px 4px rgba(0, 0, 0, .08);
-            --z4: 0 6px 16px rgba(0, 0, 0, .10), 0 3px 6px rgba(0, 0, 0, .06);
-            --radius: 8px;
+            --teal-dark:  #00695C;
+            --on-teal:    #FFFFFF;
+            --z1: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.08);
+            --z2: 0 3px 6px rgba(0,0,0,.10), 0 2px 4px rgba(0,0,0,.08);
+            --z4: 0 6px 16px rgba(0,0,0,.10), 0 3px 6px rgba(0,0,0,.06);
+            --radius:  8px;
             --radius-s: 4px;
-            --max-w: 1120px;
-            --nav-h: 64px;
+            --max-w:   1120px;
+            --nav-h:   64px;
         }
 
         @media (prefers-color-scheme: dark) {
             :root:not([data-theme="light"]) {
-                --bg: #121212;
-                --surface: #1E1E1E;
-                --surface-2: #2C2C2C;
-                --divider: #2E2E2E;
-                --on-bg: #EEEEEE;
-                --on-bg-2: #BDBDBD;
-                --on-bg-3: #757575;
-                --teal: #26A69A;
+                --bg:         #121212;
+                --surface:    #1E1E1E;
+                --surface-2:  #2C2C2C;
+                --divider:    #2E2E2E;
+                --on-bg:      #EEEEEE;
+                --on-bg-2:    #BDBDBD;
+                --on-bg-3:    #757575;
+                --teal:       #26A69A;
                 --teal-light: #1A2F2D;
-                --teal-dark: #4DB6AC;
-                --z1: 0 1px 3px rgba(0, 0, 0, .32), 0 1px 2px rgba(0, 0, 0, .24);
-                --z2: 0 3px 6px rgba(0, 0, 0, .30), 0 2px 4px rgba(0, 0, 0, .22);
-                --z4: 0 6px 16px rgba(0, 0, 0, .34), 0 3px 6px rgba(0, 0, 0, .20);
+                --teal-dark:  #4DB6AC;
+                --z1: 0 1px 3px rgba(0,0,0,.32), 0 1px 2px rgba(0,0,0,.24);
+                --z2: 0 3px 6px rgba(0,0,0,.30), 0 2px 4px rgba(0,0,0,.22);
+                --z4: 0 6px 16px rgba(0,0,0,.34), 0 3px 6px rgba(0,0,0,.20);
                 color-scheme: dark;
             }
         }
 
         :root[data-theme="dark"] {
-            --bg: #121212;
-            --surface: #1E1E1E;
-            --surface-2: #2C2C2C;
-            --divider: #2E2E2E;
-            --on-bg: #EEEEEE;
-            --on-bg-2: #BDBDBD;
-            --on-bg-3: #757575;
-            --teal: #26A69A;
+            --bg:         #121212;
+            --surface:    #1E1E1E;
+            --surface-2:  #2C2C2C;
+            --divider:    #2E2E2E;
+            --on-bg:      #EEEEEE;
+            --on-bg-2:    #BDBDBD;
+            --on-bg-3:    #757575;
+            --teal:       #26A69A;
             --teal-light: #1A2F2D;
-            --teal-dark: #4DB6AC;
-            --z1: 0 1px 3px rgba(0, 0, 0, .32), 0 1px 2px rgba(0, 0, 0, .24);
-            --z2: 0 3px 6px rgba(0, 0, 0, .30), 0 2px 4px rgba(0, 0, 0, .22);
-            --z4: 0 6px 16px rgba(0, 0, 0, .34), 0 3px 6px rgba(0, 0, 0, .20);
+            --teal-dark:  #4DB6AC;
+            --z1: 0 1px 3px rgba(0,0,0,.32), 0 1px 2px rgba(0,0,0,.24);
+            --z2: 0 3px 6px rgba(0,0,0,.30), 0 2px 4px rgba(0,0,0,.22);
+            --z4: 0 6px 16px rgba(0,0,0,.34), 0 3px 6px rgba(0,0,0,.20);
             color-scheme: dark;
         }
 
         /* ─── Reset ─────────────────────────────────────────────── */
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: 'Roboto', sans-serif;
@@ -84,20 +76,13 @@
             line-height: 1.6;
             background: var(--bg);
             color: var(--on-bg);
-            padding-left: max(16px, env(safe-area-inset-left, 0px));
+            padding-left:  max(16px, env(safe-area-inset-left,  0px));
             padding-right: max(16px, env(safe-area-inset-right, 0px));
             padding-block: 0;
         }
 
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
+        a { color: inherit; text-decoration: none; }
+        img { max-width: 100%; display: block; }
 
         /* ─── Nav ────────────────────────────────────────────────── */
         #nav {
@@ -126,10 +111,7 @@
             color: var(--on-bg);
             margin-right: auto;
         }
-
-        .nav-logo span {
-            color: var(--teal);
-        }
+        .nav-logo span { color: var(--teal); }
 
         .nav-links {
             display: flex;
@@ -137,7 +119,6 @@
             gap: 4px;
             list-style: none;
         }
-
         .nav-links a {
             font-size: .875rem;
             font-weight: 500;
@@ -146,24 +127,13 @@
             border-radius: var(--radius-s);
             transition: color .15s, background .15s;
         }
+        .nav-links a:hover { color: var(--teal); background: var(--teal-light); }
 
-        .nav-links a:hover {
-            color: var(--teal);
-            background: var(--teal-light);
-        }
-
-        .nav-controls {
-            display: flex;
-            gap: 4px;
-            margin-left: 8px;
-        }
+        .nav-controls { display: flex; gap: 4px; margin-left: 8px; }
 
         .icon-btn {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 40px; height: 40px;
+            display: flex; align-items: center; justify-content: center;
             border: none;
             background: transparent;
             border-radius: 50%;
@@ -174,36 +144,18 @@
             font-family: 'Roboto', sans-serif;
             transition: background .15s, color .15s;
         }
+        .icon-btn:hover { background: var(--teal-light); color: var(--teal); }
 
-        .icon-btn:hover {
-            background: var(--teal-light);
-            color: var(--teal);
-        }
-
-        @media (max-width: 640px) {
-            .nav-links {
-                display: none;
-            }
-        }
+        @media (max-width: 640px) { .nav-links { display: none; } }
 
         /* ─── Layout helper ──────────────────────────────────────── */
-        .container {
-            max-width: var(--max-w);
-            margin: 0 auto;
-        }
+        .container { max-width: var(--max-w); margin: 0 auto; }
 
-        section {
-            padding: 80px 0;
-        }
-
-        section:nth-of-type(even) {
-            background: var(--surface-2);
-        }
+        section { padding: 80px 0; }
+        section:nth-of-type(even) { background: var(--surface-2); }
 
         /* ─── Section header ─────────────────────────────────────── */
-        .section-header {
-            margin-bottom: 48px;
-        }
+        .section-header { margin-bottom: 48px; }
 
         .section-eyebrow {
             font-size: .75rem;
@@ -239,11 +191,9 @@
             border-radius: 100px;
             margin-bottom: 24px;
         }
-
         .hero-eyebrow::before {
             content: '';
-            width: 6px;
-            height: 6px;
+            width: 6px; height: 6px;
             border-radius: 50%;
             background: var(--teal);
             flex-shrink: 0;
@@ -257,10 +207,7 @@
             color: var(--on-bg);
             margin-bottom: 8px;
         }
-
-        .hero-name .accent {
-            color: var(--teal);
-        }
+        .hero-name .accent { color: var(--teal); }
 
         .hero-role {
             font-size: .875rem;
@@ -277,11 +224,7 @@
             margin-bottom: 36px;
         }
 
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
+        .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 
         /* ─── Buttons ────────────────────────────────────────────── */
         .btn {
@@ -300,26 +243,10 @@
             transition: box-shadow .2s, background .15s, color .15s;
             text-decoration: none;
         }
-
-        .btn-primary {
-            background: var(--teal);
-            color: var(--on-teal);
-        }
-
-        .btn-primary:hover {
-            box-shadow: var(--z2);
-            background: var(--teal-dark);
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: var(--teal);
-            border: 1.5px solid var(--teal);
-        }
-
-        .btn-outline:hover {
-            background: var(--teal-light);
-        }
+        .btn-primary { background: var(--teal); color: var(--on-teal); }
+        .btn-primary:hover { box-shadow: var(--z2); background: var(--teal-dark); }
+        .btn-outline { background: transparent; color: var(--teal); border: 1.5px solid var(--teal); }
+        .btn-outline:hover { background: var(--teal-light); }
 
         /* ─── About ──────────────────────────────────────────────── */
         .about-grid {
@@ -328,10 +255,7 @@
             align-items: flex-start;
         }
 
-        .about-photo-wrap {
-            flex: 0 0 200px;
-            max-width: 200px;
-        }
+        .about-photo-wrap { flex: 0 0 200px; max-width: 200px; }
 
         .about-photo {
             width: 100%;
@@ -351,17 +275,9 @@
             justify-content: center;
             box-shadow: var(--z2);
         }
+        .about-photo-placeholder svg { width: 56px; height: 56px; color: var(--teal); }
 
-        .about-photo-placeholder svg {
-            width: 56px;
-            height: 56px;
-            color: var(--teal);
-        }
-
-        .about-content {
-            flex: 1;
-            min-width: 0;
-        }
+        .about-content { flex: 1; min-width: 0; }
 
         .about-paragraphs {
             display: flex;
@@ -371,18 +287,9 @@
             line-height: 1.75;
             margin-bottom: 28px;
         }
+        .about-paragraphs p strong { color: var(--on-bg); font-weight: 500; }
 
-        .about-paragraphs p strong {
-            color: var(--on-bg);
-            font-weight: 500;
-        }
-
-        .chips {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
+        .chips { display: flex; flex-wrap: wrap; gap: 8px; }
         .chip {
             font-size: .8125rem;
             font-weight: 500;
@@ -393,23 +300,12 @@
         }
 
         @media (max-width: 700px) {
-            .about-grid {
-                flex-direction: column;
-            }
-
-            .about-photo-wrap {
-                flex: none;
-                max-width: 140px;
-            }
+            .about-grid { flex-direction: column; }
+            .about-photo-wrap { flex: none; max-width: 140px; }
         }
 
         /* ─── Projects ───────────────────────────────────────────── */
-        .projects-filter {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-bottom: 32px;
-        }
+        .projects-filter { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 32px; }
 
         .filter-chip {
             font-size: .8125rem;
@@ -423,7 +319,6 @@
             font-family: 'Roboto', sans-serif;
             transition: all .15s;
         }
-
         .filter-chip.active, .filter-chip:hover {
             border-color: var(--teal);
             color: var(--teal);
@@ -450,15 +345,8 @@
             max-width: 460px;
             border: 1px solid var(--divider);
         }
-
-        .project-card:hover {
-            box-shadow: var(--z4);
-            transform: translateY(-2px);
-        }
-
-        .project-card.featured {
-            border-top: 3px solid var(--teal);
-        }
+        .project-card:hover { box-shadow: var(--z4); transform: translateY(-2px); }
+        .project-card.featured { border-top: 3px solid var(--teal); }
 
         .project-body {
             padding: 24px;
@@ -475,16 +363,9 @@
             letter-spacing: 1px;
             color: var(--on-bg-3);
         }
+        .project-card.featured .project-type { color: var(--teal); }
 
-        .project-card.featured .project-type {
-            color: var(--teal);
-        }
-
-        .project-name {
-            font-size: 1.0625rem;
-            font-weight: 700;
-            color: var(--on-bg);
-        }
+        .project-name { font-size: 1.0625rem; font-weight: 700; color: var(--on-bg); }
 
         .project-role {
             font-size: .8125rem;
@@ -492,20 +373,9 @@
             font-family: 'Roboto Mono', monospace;
         }
 
-        .project-desc {
-            font-size: .9375rem;
-            color: var(--on-bg-2);
-            line-height: 1.65;
-            flex: 1;
-        }
+        .project-desc { font-size: .9375rem; color: var(--on-bg-2); line-height: 1.65; flex: 1; }
 
-        .project-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin-top: 4px;
-        }
-
+        .project-stack { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
         .stack-tag {
             font-family: 'Roboto Mono', monospace;
             font-size: .75rem;
@@ -537,10 +407,7 @@
             border: 1px solid var(--teal);
             transition: background .15s;
         }
-
-        .project-link:hover {
-            background: var(--teal-light);
-        }
+        .project-link:hover { background: var(--teal-light); }
 
         /* ─── Skills ─────────────────────────────────────────────── */
         .skills-grid {
@@ -567,11 +434,7 @@
             margin-bottom: 14px;
         }
 
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
+        .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 
         .skill-tag {
             font-family: 'Roboto Mono', monospace;
@@ -584,13 +447,8 @@
         }
 
         /* ─── Contact ────────────────────────────────────────────── */
-        #contact {
-            text-align: center;
-        }
-
-        #contact .section-header {
-            margin-bottom: 16px;
-        }
+        #contact { text-align: center; }
+        #contact .section-header { margin-bottom: 16px; }
 
         .contact-desc {
             color: var(--on-bg-2);
@@ -599,9 +457,7 @@
             line-height: 1.7;
         }
 
-        .contact-email-block {
-            margin-bottom: 24px;
-        }
+        .contact-email-block { margin-bottom: 24px; }
 
         .contact-email {
             display: inline-flex;
@@ -618,27 +474,12 @@
             transition: border-color .15s, box-shadow .15s;
             box-shadow: var(--z1);
         }
+        .contact-email:hover { border-color: var(--teal); }
 
-        .contact-email:hover {
-            border-color: var(--teal);
-        }
+        .copy-hint { font-size: .75rem; color: var(--on-bg-3); margin-top: 6px; }
+        .copy-hint.copied { color: var(--teal); }
 
-        .copy-hint {
-            font-size: .75rem;
-            color: var(--on-bg-3);
-            margin-top: 6px;
-        }
-
-        .copy-hint.copied {
-            color: var(--teal);
-        }
-
-        .contact-links {
-            display: flex;
-            gap: 12px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+        .contact-links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
         /* ─── Footer ─────────────────────────────────────────────── */
         #footer {
@@ -657,18 +498,9 @@
             flex-wrap: wrap;
         }
 
-        .footer-copy {
-            font-size: .8125rem;
-            color: var(--on-bg-3);
-        }
-
-        .footer-copy a {
-            color: var(--teal);
-        }
-
-        .footer-copy a:hover {
-            text-decoration: underline;
-        }
+        .footer-copy { font-size: .8125rem; color: var(--on-bg-3); }
+        .footer-copy a { color: var(--teal); }
+        .footer-copy a:hover { text-decoration: underline; }
 
         /* ─── Reveal animation ───────────────────────────────────── */
         .reveal {
@@ -676,18 +508,10 @@
             transform: translateY(16px);
             transition: opacity .4s ease, transform .4s ease;
         }
-
-        .reveal.visible {
-            opacity: 1;
-            transform: none;
-        }
+        .reveal.visible { opacity: 1; transform: none; }
 
         @media (prefers-reduced-motion: reduce) {
-            .reveal {
-                opacity: 1;
-                transform: none;
-                transition: none;
-            }
+            .reveal { opacity: 1; transform: none; transition: none; }
         }
     </style>
 </head>
@@ -701,18 +525,7 @@
         <div class="nav-controls">
             <button class="icon-btn" id="lang-btn" aria-label="Changer de langue">FR</button>
             <button class="icon-btn" id="theme-btn" aria-label="Changer de thème">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                     stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="5"/>
-                    <line x1="12" y1="1" x2="12" y2="3"/>
-                    <line x1="12" y1="21" x2="12" y2="23"/>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-                    <line x1="1" y1="12" x2="3" y2="12"/>
-                    <line x1="21" y1="12" x2="23" y2="12"/>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-                </svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
             </button>
         </div>
     </div>
@@ -741,8 +554,7 @@
                 <div id="about-photo-slot">
                     <div class="about-photo-placeholder">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M15.75 7.5a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 7.5a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
                         </svg>
                     </div>
                 </div>
@@ -789,11 +601,7 @@
         <div class="reveal">
             <div class="contact-email-block">
                 <div class="contact-email" id="contact-email-btn" tabindex="0" role="button">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                         stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                        <polyline points="22,6 12,12 2,6"/>
-                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
                     <span id="contact-email-text"></span>
                 </div>
                 <div class="copy-hint" id="copy-hint">Cliquer pour copier</div>
@@ -817,18 +625,11 @@
     let data = null;
     let activeFilter = 'all';
 
-    try {
-        lang = localStorage.getItem('lang') || 'fr';
-    } catch (e) {
-    }
+    try { lang = localStorage.getItem('lang') || 'fr'; } catch(e) {}
 
     /* ── Theme ───────────────────────────────── */
-    (function () {
-        let saved;
-        try {
-            saved = localStorage.getItem('theme');
-        } catch (e) {
-        }
+    (function() {
+        let saved; try { saved = localStorage.getItem('theme'); } catch(e) {}
         if (saved) document.documentElement.setAttribute('data-theme', saved);
     })();
 
@@ -836,10 +637,7 @@
         const html = document.documentElement;
         const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
         html.setAttribute('data-theme', next);
-        try {
-            localStorage.setItem('theme', next);
-        } catch (e) {
-        }
+        try { localStorage.setItem('theme', next); } catch(e) {}
     });
 
     /* ── Translation helper ──────────────────── */
@@ -859,7 +657,7 @@
         renderSkills(d.skills);
         renderContact(d.contact);
         renderFooter(d.footer);
-        initReveal();
+        // initReveal est appelé une seule fois après le premier render (voir boot)
     }
 
     function renderNav(nav) {
@@ -887,10 +685,7 @@
             a.href = btn.href;
             a.textContent = t(btn.label);
             a.className = 'btn btn-' + btn.style;
-            if (btn.href && btn.href.startsWith('http')) {
-                a.target = '_blank';
-                a.rel = 'noopener';
-            }
+            if (btn.href && btn.href.startsWith('http')) { a.target = '_blank'; a.rel = 'noopener'; }
             actEl.appendChild(a);
         });
     }
@@ -905,9 +700,7 @@
             img.src = about.photo;
             img.alt = 'Emrick RIVET';
             img.className = 'about-photo';
-            img.onerror = function () {
-                this.hidden = true;
-            };
+            img.onerror = function() { this.hidden = true; };
             slot.innerHTML = '';
             slot.appendChild(img);
         }
@@ -915,11 +708,7 @@
         const paras = document.getElementById('about-paragraphs');
         paras.innerHTML = '';
         const arr = about.paragraphs[lang] || about.paragraphs.fr || [];
-        arr.forEach(p => {
-            const el = document.createElement('p');
-            el.innerHTML = p;
-            paras.appendChild(el);
-        });
+        arr.forEach(p => { const el = document.createElement('p'); el.innerHTML = p; paras.appendChild(el); });
 
         const chipsEl = document.getElementById('about-chips');
         chipsEl.innerHTML = '';
@@ -939,18 +728,15 @@
         filterEl.innerHTML = '';
 
         const filters = [
-            {key: 'all', label: {fr: 'Tous', en: 'All'}},
-            {key: 'featured', label: {fr: '⭐ Mis en avant', en: '⭐ Featured'}}
+            { key: 'all',      label: { fr: 'Tous', en: 'All' } },
+            { key: 'featured', label: { fr: '⭐ Mis en avant', en: '⭐ Featured' } }
         ];
 
         filters.forEach(f => {
             const btn = document.createElement('button');
             btn.className = 'filter-chip' + (activeFilter === f.key ? ' active' : '');
             btn.textContent = t(f.label);
-            btn.addEventListener('click', () => {
-                activeFilter = f.key;
-                renderProjects(data.projects);
-            });
+            btn.addEventListener('click', () => { activeFilter = f.key; renderProjects(data.projects); });
             filterEl.appendChild(btn);
         });
 
@@ -1022,6 +808,14 @@
 
             grid.appendChild(card);
         });
+
+        // Observer les nouvelles cartes injectées par le filtre
+        if (revealObserver) {
+            grid.querySelectorAll('.reveal').forEach(el => {
+                el.classList.remove('visible');
+                revealObserver.observe(el);
+            });
+        }
     }
 
     function renderSkills(skills) {
@@ -1075,9 +869,7 @@
                 window.getSelection().addRange(range);
             });
         };
-        emailBtn.addEventListener('keydown', e => {
-            if (e.key === 'Enter' || e.key === ' ') emailBtn.click();
-        });
+        emailBtn.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') emailBtn.click(); });
 
         const linksEl = document.getElementById('contact-links');
         linksEl.innerHTML = '';
@@ -1098,54 +890,44 @@
     }
 
     /* ── Reveal ──────────────────────────────── */
+    // Observer global pour pouvoir observer les cartes injectées dynamiquement (filtre projets)
+    let revealObserver = null;
+
     function initReveal() {
-        const observer = new IntersectionObserver(entries => {
+        revealObserver = new IntersectionObserver(entries => {
             entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
+                if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); }
             });
-        }, {threshold: 0.08});
+        }, { threshold: 0.08 });
         document.querySelectorAll('.reveal').forEach(el => {
             el.classList.remove('visible');
-            observer.observe(el);
+            revealObserver.observe(el);
         });
     }
 
     /* ── Lang toggle ─────────────────────────── */
+    // Au changement de langue, on re-render sans animation : on ajoute 'visible' à toutes les cartes
     document.getElementById('lang-btn').addEventListener('click', () => {
         lang = lang === 'fr' ? 'en' : 'fr';
-        try {
-            localStorage.setItem('lang', lang);
-        } catch (e) {
+        try { localStorage.setItem('lang', lang); } catch(e) {}
+        if (data) {
+            render(data);
+            // Rendre immédiatement visible tout ce qui a été re-créé (pas d'animation au changement de langue)
+            document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
         }
-        if (data) render(data);
     });
 
     /* ── Boot ────────────────────────────────── */
     // Lit le tag <script id="portfolio-data"> (file://) ou charge data.json (serveur)
-    (function () {
+    (function() {
         var el = document.getElementById('portfolio-data');
         if (el) {
-            try {
-                data = JSON.parse(el.textContent);
-                render(data);
-            } catch (e) {
-                console.error('portfolio-data parse error', e);
-            }
+            try { data = JSON.parse(el.textContent); render(data); initReveal(); } catch(e) { console.error('portfolio-data parse error', e); }
         } else {
             fetch('./data.json')
-                .then(function (r) {
-                    return r.json();
-                })
-                .then(function (d) {
-                    data = d;
-                    render(d);
-                })
-                .catch(function (e) {
-                    console.error('fetch data.json failed', e);
-                });
+                .then(function(r) { return r.json(); })
+                .then(function(d) { data = d; render(d); initReveal(); })
+                .catch(function(e) { console.error('fetch data.json failed', e); });
         }
     })();
 </script>
