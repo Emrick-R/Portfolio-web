@@ -2,248 +2,556 @@
   "nav": {
     "logo": "ER",
     "links": [
-      { "label": { "fr": "À propos",    "en": "About"    }, "href": "#about"    },
-      { "label": { "fr": "Projets",     "en": "Projects" }, "href": "#projects" },
-      { "label": { "fr": "Compétences", "en": "Skills"   }, "href": "#skills"   },
-      { "label": { "fr": "Contact",     "en": "Contact"  }, "href": "#contact"  }
-    ]
-  },
-
-  "hero": {
-    "eyebrow": { "fr": "Disponible pour un stage", "en": "Available for an internship" },
-    "name": "Emrick RIVET",
-    "role": {
-      "fr": "Étudiant développeur · Ynov Campus Sophia-Antipolis · Info B2",
-      "en": "Developer student · Ynov Campus Sophia-Antipolis · Info B2"
-    },
-    "subtitle": {
-      "fr": "Je construis des projets concrets — API REST, bases de données, infra réseau. Full-stack backend, passionné par les systèmes qui tiennent debout.",
-      "en": "I build concrete projects — REST APIs, databases, network infrastructure. Full-stack backend developer, passionate about systems that actually work."
-    },
-    "buttons": [
-      { "label": { "fr": "Voir mes projets", "en": "See my projects" }, "href": "#projects", "style": "primary"  },
-      { "label": { "fr": "Me contacter",     "en": "Contact me"      }, "href": "#contact",  "style": "outline"  }
-    ]
-  },
-
-  "about": {
-    "sectionLabel": { "fr": "Qui suis-je",  "en": "About me"  },
-    "sectionTitle":  { "fr": "À propos",     "en": "About"     },
-    "photo": "./assets/images/profile.jpg",
-    "paragraphs": {
-      "fr": [
-        "Étudiant en <strong>Info B2 à Ynov Campus Sophia-Antipolis</strong>, je construis des projets qui vont du backend FastAPI/PostgreSQL au réseau d'entreprise simulé. Je suis à l'aise autant côté serveur que côté infra.",
-        "Ce qui m'attire dans le développement, c'est la rigueur : concevoir une API propre, une base bien normalisée, un déploiement Docker qui ne plante pas. Je cherche à comprendre pourquoi les choses fonctionnent avant de les assembler.",
-        "Je suis actuellement à la recherche d'un <strong>stage</strong> pour mettre mes compétences en pratique dans un contexte professionnel."
-      ],
-      "en": [
-        "Second-year bachelor student at <strong>Ynov Campus Sophia-Antipolis (Info B2)</strong>, I build projects ranging from FastAPI/PostgreSQL backends to simulated enterprise networks. I'm equally comfortable on the server side and in infrastructure.",
-        "What draws me to development is precision: designing a clean API, a well-normalised database, a Docker deployment that doesn't fall over. I want to understand why things work before assembling them.",
-        "I'm currently looking for an <strong>internship</strong> to apply my skills in a professional environment."
-      ]
-    },
-    "chips": [
-      { "label": { "fr": "Backend",       "en": "Backend"       } },
-      { "label": { "fr": "APIs REST",     "en": "REST APIs"     } },
-      { "label": { "fr": "PostgreSQL",    "en": "PostgreSQL"    } },
-      { "label": { "fr": "Docker",        "en": "Docker"        } },
-      { "label": { "fr": "Infra réseau",  "en": "Networking"    } },
-      { "label": { "fr": "Full-stack",    "en": "Full-stack"    } }
-    ]
-  },
-
-  "skills": {
-    "sectionLabel": { "fr": "Stack technique", "en": "Tech stack"  },
-    "sectionTitle":  { "fr": "Compétences",     "en": "Skills"     },
-    "groups": [
       {
-        "title": { "fr": "Backend",    "en": "Backend"    },
-        "tags": ["FastAPI", "Python", "Node.js", "Express", "Go", "Java"]
+        "label": {
+          "fr": "À propos",
+          "en": "About"
+        },
+        "href": "#about"
       },
       {
-        "title": { "fr": "Frontend",   "en": "Frontend"   },
-        "tags": ["React", "Redux", "JavaScript", "HTML", "CSS"]
+        "label": {
+          "fr": "Projets",
+          "en": "Projects"
+        },
+        "href": "#projects"
       },
       {
-        "title": { "fr": "Données",    "en": "Data"       },
-        "tags": ["PostgreSQL", "PL/pgSQL", "MySQL", "SQL"]
+        "label": {
+          "fr": "Compétences",
+          "en": "Skills"
+        },
+        "href": "#skills"
       },
       {
-        "title": { "fr": "DevOps & Infra", "en": "DevOps & Infra" },
-        "tags": ["Docker", "Linux", "Bash", "Ubuntu Server", "Active Directory", "Tailscale", "Nextcloud"]
-      },
-      {
-        "title": { "fr": "Outils",     "en": "Tools"      },
-        "tags": ["Git", "GitHub", "JWT", "bcrypt", "OAuth2", "Socket.io"]
+        "label": {
+          "fr": "Contact",
+          "en": "Contact"
+        },
+        "href": "#contact"
       }
     ]
   },
-
+  "hero": {
+    "eyebrow": {
+      "fr": "Disponible pour un stage",
+      "en": "Available for an internship"
+    },
+    "name": "Emrick RIVET",
+    "role": {
+      "fr": "Étudiant développeur · Ynov Campus Sophia-Antipolis · Bachelor 2 — IA / Data",
+      "en": "Developer student · Ynov Campus Sophia-Antipolis · Bachelor 2 — AI / Data"
+    },
+    "subtitle": {
+      "fr": "Étudiant en 2e année de Bachelor informatique (spécialité IA / Data) à Ynov Sophia-Antipolis, je cherche un stage pour contribuer au développement d'API et de bases de données au sein d'une équipe technique.",
+      "en": "Second-year Bachelor in Computer Science (AI / Data track) at Ynov Sophia-Antipolis, I'm looking for an internship to contribute to API and database development within a technical team."
+    },
+    "buttons": [
+      {
+        "label": {
+          "fr": "Voir mes projets",
+          "en": "See my projects"
+        },
+        "href": "#projects",
+        "style": "primary"
+      },
+      {
+        "label": {
+          "fr": "Me contacter",
+          "en": "Contact me"
+        },
+        "href": "#contact",
+        "style": "outline"
+      }
+    ]
+  },
+  "about": {
+    "sectionLabel": {
+      "fr": "Qui suis-je",
+      "en": "About me"
+    },
+    "sectionTitle": {
+      "fr": "À propos",
+      "en": "About"
+    },
+    "photo": "./assets/images/profile.jpg",
+    "paragraphs": {
+      "fr": [
+        "Étudiant en <strong>2e année de Bachelor informatique (spécialité IA / Data)</strong> à Ynov Campus Sophia-Antipolis, je conçois des back-ends complets — de la modélisation à la sécurité — et je documente et teste ce que je livre.",
+        "Ce qui m'attire dans le développement, c'est la rigueur : une API propre avec FastAPI, une base bien normalisée sous PostgreSQL, un déploiement Docker reproductible. Je veux comprendre pourquoi les choses fonctionnent avant de les assembler.",
+        "Je cherche un <strong>stage</strong> pour mettre ces compétences en pratique dans un contexte professionnel."
+      ],
+      "en": [
+        "Second-year Bachelor in <strong>Computer Science (AI / Data track)</strong> at Ynov Campus Sophia-Antipolis, I design complete back-ends — from data modelling to security — and I document and test what I deliver.",
+        "What draws me to development is precision: a clean API with FastAPI, a well-normalised PostgreSQL database, a reproducible Docker deployment. I want to understand why things work before assembling them.",
+        "I'm looking for an <strong>internship</strong> to apply these skills in a professional environment."
+      ]
+    },
+    "chips": [
+      {
+        "label": {
+          "fr": "Back-end",
+          "en": "Back-end"
+        }
+      },
+      {
+        "label": {
+          "fr": "APIs REST",
+          "en": "REST APIs"
+        }
+      },
+      {
+        "label": {
+          "fr": "PostgreSQL",
+          "en": "PostgreSQL"
+        }
+      },
+      {
+        "label": {
+          "fr": "FastAPI / Python",
+          "en": "FastAPI / Python"
+        }
+      },
+      {
+        "label": {
+          "fr": "Docker",
+          "en": "Docker"
+        }
+      },
+      {
+        "label": {
+          "fr": "IA / Data",
+          "en": "AI / Data"
+        }
+      },
+      {
+        "label": {
+          "fr": "Infra Linux",
+          "en": "Linux infra"
+        }
+      }
+    ]
+  },
+  "skills": {
+    "sectionLabel": {
+      "fr": "Stack technique",
+      "en": "Tech stack"
+    },
+    "sectionTitle": {
+      "fr": "Compétences",
+      "en": "Skills"
+    },
+    "groups": [
+      {
+        "title": {
+          "fr": "Back-end",
+          "en": "Back-end"
+        },
+        "tags": [
+          "Python",
+          "FastAPI",
+          "SQLAlchemy 2",
+          "Pydantic",
+          "Node.js",
+          "Express",
+          "Go",
+          "Java"
+        ]
+      },
+      {
+        "title": {
+          "fr": "Bases de données",
+          "en": "Databases"
+        },
+        "tags": [
+          "PostgreSQL",
+          "PL/pgSQL",
+          "Alembic",
+          "MySQL",
+          "EXPLAIN / index",
+          "triggers",
+          "rôles & droits"
+        ]
+      },
+      {
+        "title": {
+          "fr": "Sécurité applicative",
+          "en": "App security"
+        },
+        "tags": [
+          "JWT",
+          "argon2id",
+          "bcrypt",
+          "moindre privilège"
+        ]
+      },
+      {
+        "title": {
+          "fr": "Front-end",
+          "en": "Front-end"
+        },
+        "tags": [
+          "React",
+          "Redux",
+          "Socket.io",
+          "JavaScript",
+          "HTML",
+          "CSS"
+        ]
+      },
+      {
+        "title": {
+          "fr": "Systèmes & DevOps",
+          "en": "Systems & DevOps"
+        },
+        "tags": [
+          "Linux",
+          "Bash",
+          "SSH",
+          "Docker Compose",
+          "Git / GitHub",
+          "Windows Server",
+          "Active Directory"
+        ]
+      }
+    ]
+  },
   "projects": {
-    "sectionLabel": { "fr": "Ce que j'ai construit", "en": "What I've built" },
-    "sectionTitle":  { "fr": "Projets",               "en": "Projects"       },
+    "sectionLabel": {
+      "fr": "Ce que j'ai construit",
+      "en": "What I've built"
+    },
+    "sectionTitle": {
+      "fr": "Projets",
+      "en": "Projects"
+    },
     "items": [
       {
         "featured": true,
-        "type":  { "fr": "Projet perso · B2", "en": "Personal project · B2" },
-        "name":  "BuildVault",
+        "type": {
+          "fr": "Projet perso · B2",
+          "en": "Personal project · B2"
+        },
+        "name": "BuildVault",
         "description": {
           "fr": "Site web pour sauvegarder ses builds et équipements par jeu vidéo — upload de screenshots, descriptions, système de tags. Backend FastAPI + PostgreSQL, déployé avec Docker.",
           "en": "Web app to save gaming builds and gear per video game — screenshot upload, descriptions and a tag system. FastAPI + PostgreSQL backend, deployed with Docker."
         },
-        "role": { "fr": "SOLO — Conception & développement complet", "en": "SOLO — Full design & development" },
-        "stack": ["FastAPI", "Python", "PostgreSQL", "Docker", "JavaScript"],
+        "role": {
+          "fr": "SOLO — Conception & développement complet",
+          "en": "SOLO — Full design & development"
+        },
+        "stack": [
+          "FastAPI",
+          "Python",
+          "PostgreSQL",
+          "Docker",
+          "JavaScript"
+        ],
         "links": []
       },
       {
         "featured": true,
-        "type":  { "fr": "Projet scolaire · B2 · Trio", "en": "School project · B2 · Trio" },
-        "name":  "Ytasty Crousty",
+        "type": {
+          "fr": "Projet scolaire · B2 · Trio",
+          "en": "School project · B2 · Trio"
+        },
+        "name": "Ytasty Crousty",
         "description": {
           "fr": "Application de commande de food en ligne — back-end FastAPI complet, routage front React protégé, gestion Redux, validation de commandes sans compte, suivi en temps réel via Socket.io, tableau de bord cuisine.",
           "en": "Online food ordering app — full FastAPI backend, protected React routing, Redux state management, guest order validation, real-time tracking via Socket.io, kitchen dashboard."
         },
-        "role": { "fr": "TRIO — Backend intégral + front (routing, Redux, commandes, suivi, dashboard cuisine)", "en": "TRIO — Full backend + front (routing, Redux, orders, tracking, kitchen dashboard)" },
-        "stack": ["FastAPI", "Python", "PostgreSQL", "React", "Redux", "Socket.io", "MUI"],
+        "role": {
+          "fr": "TRIO — Backend intégral + front (routing, Redux, commandes, suivi, dashboard cuisine)",
+          "en": "TRIO — Full backend + front (routing, Redux, orders, tracking, kitchen dashboard)"
+        },
+        "stack": [
+          "FastAPI",
+          "Python",
+          "PostgreSQL",
+          "React",
+          "Redux",
+          "Socket.io",
+          "MUI"
+        ],
         "links": [
-          { "label": "GitHub front", "href": "https://github.com/Florian-AZ/Ytasty-Crousty-Frontend-React" }
+          {
+            "label": "GitHub front",
+            "href": "https://github.com/Florian-AZ/Ytasty-Crousty-Frontend-React"
+          }
         ]
       },
       {
         "featured": true,
-        "type":  { "fr": "Projet scolaire · B2 · Solo", "en": "School project · B2 · Solo" },
-        "name":  "NovaBank Core",
+        "type": {
+          "fr": "Projet scolaire · B2 · Solo",
+          "en": "School project · B2 · Solo"
+        },
+        "name": "NovaBank Core",
         "description": {
           "fr": "Système bancaire complet en base de données — modélisation relationnelle, procédures stockées PL/pgSQL pour les transactions, triggers d'audit, scripts Bash d'administration sur Ubuntu.",
           "en": "Complete banking system in a database — relational modelling, PL/pgSQL stored procedures for transactions, audit triggers, Bash administration scripts on Ubuntu."
         },
-        "role": { "fr": "SOLO — Conception & développement", "en": "SOLO — Design & development" },
-        "stack": ["PostgreSQL", "PL/pgSQL", "Bash", "Ubuntu Server"],
+        "role": {
+          "fr": "SOLO — Conception & développement",
+          "en": "SOLO — Design & development"
+        },
+        "stack": [
+          "PostgreSQL",
+          "PL/pgSQL",
+          "Bash",
+          "Ubuntu Server"
+        ],
         "links": []
       },
       {
-        "type":  { "fr": "Projet scolaire · B1 · 48h", "en": "School project · B1 · 48h" },
-        "name":  "Qui a la ref ?",
+        "type": {
+          "fr": "Projet scolaire · B1 · 48h",
+          "en": "School project · B1 · 48h"
+        },
+        "name": "Qui a la ref ?",
         "description": {
           "fr": "Quiz battle royale multijoueur pop culture — grand écran animateur + réponses mobile, élimination automatique toutes les 120s, podium final. Architecture stateless pilotée par polling HTTP.",
           "en": "Pop culture multiplayer battle royale quiz — host screen + mobile answers, automatic elimination every 120s, final podium. Stateless architecture driven by HTTP polling."
         },
-        "role": { "fr": "QUATRE — Rédacteur de questions · banque pop culture", "en": "FOUR — Question writer · pop culture question bank" },
-        "stack": ["React", "Express", "Turso/libSQL"],
+        "role": {
+          "fr": "QUATRE — Rédacteur de questions · banque pop culture",
+          "en": "FOUR — Question writer · pop culture question bank"
+        },
+        "stack": [
+          "React",
+          "Express",
+          "Turso/libSQL"
+        ],
         "links": [
-          { "label": "GitHub", "href": "https://github.com/Emrick-R/Challenge-48H-G6" }
+          {
+            "label": "GitHub",
+            "href": "https://github.com/Emrick-R/Challenge-48H-G6"
+          }
         ]
       },
       {
-        "type":  { "fr": "Web full-stack · B1", "en": "Full-stack web · B1" },
-        "name":  "Pwitter",
+        "type": {
+          "fr": "Web full-stack · B1",
+          "en": "Full-stack web · B1"
+        },
+        "name": "Pwitter",
         "description": {
           "fr": "Forum-style web app avec authentification JWT, posts, gestion des droits admin. Architecture backend complète avec bcrypt pour les mots de passe.",
           "en": "Forum-style web app with JWT authentication, posts and admin rights management. Full backend architecture with bcrypt password hashing."
         },
-        "role": { "fr": "DUO — Backend complet", "en": "DUO — Full backend" },
-        "stack": ["Node.js", "Express", "MySQL", "JWT", "bcrypt"],
+        "role": {
+          "fr": "DUO — Backend complet",
+          "en": "DUO — Full backend"
+        },
+        "stack": [
+          "Node.js",
+          "Express",
+          "MySQL",
+          "JWT",
+          "bcrypt"
+        ],
         "links": [
-          { "label": "GitHub", "href": "https://github.com/Emrick-R/Livrables_forum_Pwitter" }
+          {
+            "label": "GitHub",
+            "href": "https://github.com/Emrick-R/Livrables_forum_Pwitter"
+          }
         ]
       },
       {
-        "type":  { "fr": "Infrastructure · B1", "en": "Infrastructure · B1" },
-        "name":  "Projet NUAGE",
+        "type": {
+          "fr": "Infrastructure · B1",
+          "en": "Infrastructure · B1"
+        },
+        "name": "Projet NUAGE",
         "description": {
           "fr": "Réseau d'entreprise simulé — domaine Active Directory, partage SMB/NTFS, Nextcloud auto-hébergé et accès VPN externe via Tailscale.",
           "en": "Simulated enterprise network — Active Directory domain, SMB/NTFS sharing, self-hosted Nextcloud and external VPN access via Tailscale."
         },
-        "role": { "fr": "TRIO — Responsable VPN & cloud", "en": "TRIO — VPN & cloud lead" },
-        "stack": ["Windows Server 2022", "Ubuntu Server", "Active Directory", "Nextcloud", "Tailscale"],
+        "role": {
+          "fr": "TRIO — Responsable VPN & cloud",
+          "en": "TRIO — VPN & cloud lead"
+        },
+        "stack": [
+          "Windows Server 2022",
+          "Ubuntu Server",
+          "Active Directory",
+          "Nextcloud",
+          "Tailscale"
+        ],
         "links": [
-          { "label": "GitHub", "href": "https://github.com/Florian-AZ/Projet-Nuage" },
-          { "label": "Slides",  "href": "./assets/slides/NUAGE.pdf" }
+          {
+            "label": "GitHub",
+            "href": "https://github.com/Florian-AZ/Projet-Nuage"
+          },
+          {
+            "label": "Slides",
+            "href": "./assets/slides/NUAGE.pdf"
+          }
         ]
       },
       {
-        "type":  { "fr": "API / Backend · B1", "en": "API / Backend · B1" },
-        "name":  "Spotify Go",
+        "type": {
+          "fr": "API / Backend · B1",
+          "en": "API / Backend · B1"
+        },
+        "name": "Spotify Go",
         "description": {
           "fr": "Recherche de musiques via l'API Spotify et ajout aux favoris. Backend entièrement en Go avec authentification OAuth2.",
           "en": "Music search via the Spotify API with a favourites system. Backend built entirely in Go with OAuth2 authentication."
         },
-        "role": { "fr": "DUO — Backend complet", "en": "DUO — Full backend" },
-        "stack": ["Go", "Spotify API", "OAuth2"],
+        "role": {
+          "fr": "DUO — Backend complet",
+          "en": "DUO — Full backend"
+        },
+        "stack": [
+          "Go",
+          "Spotify API",
+          "OAuth2"
+        ],
         "links": [
-          { "label": "GitHub", "href": "https://github.com/Emrick-R/TP-API-Spotify" },
-          { "label": "Slides",  "href": "./assets/slides/Groupie-Tracker-Sudo-FM.pdf" }
+          {
+            "label": "GitHub",
+            "href": "https://github.com/Emrick-R/TP-API-Spotify"
+          },
+          {
+            "label": "Slides",
+            "href": "./assets/slides/Groupie-Tracker-Sudo-FM.pdf"
+          }
         ]
       },
       {
-        "type":  { "fr": "Jeu browser · B1", "en": "Browser game · B1" },
-        "name":  "Abyssal Clicker",
+        "type": {
+          "fr": "Jeu browser · B1",
+          "en": "Browser game · B1"
+        },
+        "name": "Abyssal Clicker",
         "description": {
           "fr": "Clicker game océanique avec 13 niveaux de progression, architecture JavaScript modulaire, interface CSS Grid.",
           "en": "Ocean-themed clicker game with 13 progression tiers, modular JavaScript architecture and a CSS Grid interface."
         },
-        "role": { "fr": "TRIO — Visuel", "en": "TRIO — Visual" },
-        "stack": ["JavaScript", "CSS Grid", "HTML"],
+        "role": {
+          "fr": "TRIO — Visuel",
+          "en": "TRIO — Visual"
+        },
+        "stack": [
+          "JavaScript",
+          "CSS Grid",
+          "HTML"
+        ],
         "links": [
-          { "label": "GitHub", "href": "https://github.com/Harld9/Abyssal-Clicker" }
+          {
+            "label": "GitHub",
+            "href": "https://github.com/Harld9/Abyssal-Clicker"
+          }
         ]
       },
       {
-        "type":  { "fr": "Jeu Java · B1", "en": "Java game · B1" },
-        "name":  "Urban Marginal",
+        "type": {
+          "fr": "Jeu Java · B1",
+          "en": "Java game · B1"
+        },
+        "name": "Urban Marginal",
         "description": {
           "fr": "Jeu multijoueur réseau avec interface Swing, gestion des connexions/déconnexions et communication par sockets Java.",
           "en": "Networked multiplayer game with Swing UI, player connection handling and Java socket communication."
         },
-        "role": { "fr": "SOLO — Développement complet", "en": "SOLO — Full development" },
-        "stack": ["Java", "Swing", "Sockets"],
+        "role": {
+          "fr": "SOLO — Développement complet",
+          "en": "SOLO — Full development"
+        },
+        "stack": [
+          "Java",
+          "Swing",
+          "Sockets"
+        ],
         "links": [
-          { "label": "GitHub", "href": "https://github.com/Emrick-R/Urban-Marginal" }
+          {
+            "label": "GitHub",
+            "href": "https://github.com/Emrick-R/Urban-Marginal"
+          }
         ]
       },
       {
-        "type":  { "fr": "Mini RPG terminal · B1", "en": "Terminal mini RPG · B1" },
-        "name":  "🍕 Pizza Battle",
+        "type": {
+          "fr": "Mini RPG terminal · B1",
+          "en": "Terminal mini RPG · B1"
+        },
+        "name": "🍕 Pizza Battle",
         "description": {
           "fr": "Mini RPG en ligne de commande — ennemis pizza-thématisés, système de progression, scoring, difficulté adaptative.",
           "en": "Command-line mini RPG — pizza-themed enemies, progression system, scoring and adaptive difficulty."
         },
-        "role": { "fr": "DUO — Développement complet", "en": "DUO — Full development" },
-        "stack": ["Go"],
+        "role": {
+          "fr": "DUO — Développement complet",
+          "en": "DUO — Full development"
+        },
+        "stack": [
+          "Go"
+        ],
         "links": [
-          { "label": "GitHub", "href": "https://github.com/Emrick-R/projet-red_PIZZA-BATTLE" }
+          {
+            "label": "GitHub",
+            "href": "https://github.com/Emrick-R/projet-red_PIZZA-BATTLE"
+          }
         ]
       },
       {
-        "type":  { "fr": "Scripting Bash · B1", "en": "Bash scripting · B1" },
-        "name":  "renpic.sh",
+        "type": {
+          "fr": "Scripting Bash · B1",
+          "en": "Bash scripting · B1"
+        },
+        "name": "renpic.sh",
         "description": {
           "fr": "Script de renommage automatique de photos JPEG à partir des métadonnées EXIF — date de prise, nom personnalisable via options.",
           "en": "Automatic JPEG photo renaming script using EXIF metadata — capture date, customisable name via options."
         },
-        "role": { "fr": "SOLO — Conception", "en": "SOLO — Design" },
-        "stack": ["Bash", "exiftool", "getopts", "Linux"],
+        "role": {
+          "fr": "SOLO — Conception",
+          "en": "SOLO — Design"
+        },
+        "stack": [
+          "Bash",
+          "exiftool",
+          "getopts",
+          "Linux"
+        ],
         "links": [
-          { "label": "GitHub", "href": "https://github.com/Emrick-R/Renpic.sh" }
+          {
+            "label": "GitHub",
+            "href": "https://github.com/Emrick-R/Renpic.sh"
+          }
         ]
       }
     ]
   },
-
   "contact": {
-    "sectionLabel": { "fr": "Travaillons ensemble", "en": "Let's work together" },
-    "sectionTitle":  { "fr": "Contact",              "en": "Contact"            },
+    "sectionLabel": {
+      "fr": "Travaillons ensemble",
+      "en": "Let's work together"
+    },
+    "sectionTitle": {
+      "fr": "Contact",
+      "en": "Contact"
+    },
     "description": {
       "fr": "Je suis disponible pour un stage — n'hésite pas à me contacter si tu as une opportunité ou juste envie d'échanger.",
       "en": "I am available for an internship — feel free to reach out if you have an opportunity or just want to chat."
     },
     "email": "emrick.rivet@outlook.fr",
     "links": [
-      { "label": "GitHub",   "href": "https://github.com/Emrick-R",                         "icon": "github"   },
-      { "label": "LinkedIn", "href": "https://www.linkedin.com/in/emrick-rivet-763910178/", "icon": "linkedin" }
+      {
+        "label": "GitHub",
+        "href": "https://github.com/Emrick-R",
+        "icon": "github"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/emrick-rivet-763910178/",
+        "icon": "linkedin"
+      }
     ]
   },
-
   "footer": {
     "name": "Emrick RIVET",
     "year": 2026,
